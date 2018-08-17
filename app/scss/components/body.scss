@@ -37,7 +37,12 @@ textarea,input {
 }
 
 a{
+	color: #12824B;
 	transition: color 0.3s linear;
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
 }
 
 body {
@@ -46,6 +51,9 @@ body {
 	font-size: $default-size-font;
 	font-family: $default-font;
 	color: $base-color;
+	&.noscroll{
+		overflow: hidden;
+	}
 }
 
 textarea,input {
@@ -56,10 +64,10 @@ textarea,input {
 }
 
 
-::-webkit-input-placeholder {color:#a5a8ab;@include transition(all 0.3s ease);}
-::-moz-placeholder          {color:#a5a8ab;@include transition(all 0.3s ease);}
-:-moz-placeholder           {color:#a5a8ab;@include transition(all 0.3s ease);}
-:-ms-input-placeholder      {color:#a5a8ab;@include transition(all 0.3s ease);}
+::-webkit-input-placeholder {color:#222222;@include transition(all 0.3s ease);}
+::-moz-placeholder          {color:#222222;@include transition(all 0.3s ease);}
+:-moz-placeholder           {color:#222222;@include transition(all 0.3s ease);}
+:-ms-input-placeholder      {color:#222222;@include transition(all 0.3s ease);}
 
 
 

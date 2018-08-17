@@ -1,0 +1,144 @@
+.page-footer{
+	background: #0b1f16;
+	padding: 60px 0 33px;
+	color: #fff;
+}
+
+.develop{
+	display: flex;
+	justify-content: center;
+	font-size: 14px;
+	a{
+		width: 73px;
+		height: 18px;
+		background: red;
+		display: inline-block;
+		position: relative;
+		margin-left: 15px;
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 91px;
+			height: 30px;
+			border: 2px solid #BBEE2A;
+			position: absolute;
+			left: -8px;
+			top: -5px;
+			transform: skewX(-10deg);
+		}
+	}
+}
+
+
+.page-footer-info{
+	font-size: 14px;
+	display: flex;
+	justify-content:space-between;
+	margin-bottom: 39px;
+}
+
+
+.page-footer-info__item{
+	&:first-child{
+		text-align: left;
+	}
+	&:nth-child(2){
+		text-align: center;
+	}
+	&:last-child{
+		text-align: right;
+	}
+}
+
+.coords{
+	display: block;
+	color: $default-color;
+}
+
+
+.page-footer-top{
+	font-size: 14px;
+	display: flex;
+	justify-content:space-between;
+	margin-bottom: 64px;
+	position: relative;
+	min-height: 140px;
+}
+
+.page-footer-top__item{
+	display: flex;
+	align-items: center;
+}
+
+.socials{
+	display: flex;
+	align-items:center;
+	    padding-left: 12px;
+    margin-top: -8px;
+}
+
+.socials__item{
+	width: 20px;
+	height: 20px;
+	background: red;
+	margin-right: 42px;
+	position: relative;
+
+	&:after{
+		content: "";
+		display: inline-block;
+		height: 1px;
+		width: 24px;
+		opacity: 0.14;
+		background-color: #FFFFFF;
+		position: absolute;
+		left: calc(100% + 8px);
+    top: 50%;
+	}
+	&:last-child{
+		margin-right: 0;
+		&:after{
+			display: none;
+		}
+	}
+}
+
+.page-footer__mail{
+    margin-left: 87px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: -12px;
+}
+
+.page-footer-phone{
+	font-size: 22px;
+	font-family: 'lato-bold';
+	span{
+		display: inline-block;
+		position: relative;
+		top: -3px;
+	}
+}
+
+.page-footer-phone__btn{
+	font-size: 22px;
+	font-family: 'lato-bold';
+	background: #6CC644;
+	border-radius: 19px;
+	    padding: 3px 19px;
+	margin-left: 25px;
+	color: #fff;
+	text-decoration: none!important;
+}
+
+.page-footer-top__icon{
+    display: inline-block;
+    width: 140px;
+    height: 144px;
+    background: grey;
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+    top: -6px;
+}

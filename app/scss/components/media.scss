@@ -1,0 +1,22 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 0) {
+
+}
+
+
+//MEDIA
+@media screen and (max-width: 1260px){
+	.container-fluid{
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.bl-indent{
+		padding-left: 0;
+	}
+}
+
