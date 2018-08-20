@@ -18,11 +18,67 @@
 	<body>
 		<!--LAYOUT-->
 		<div class="layout">
-			<header class="page-header">
-				<div class="container-fluid">
-					хедер Хедер ХЕДЕР
+			<div class="page-top" style="background-image: url(img/content/test2.jpg);">
+				<header class="page-header">
+					<div class="container-fluid">
+						<a href="#" class="top-logo"></a>
+						<div class="page-header__top">
+							<div class="top-menu">
+								<a href="#" class="top-menu__item">Новости</a>
+								<a href="#" class="top-menu__item">Галерея</a>
+								<a href="#" class="top-menu__item">Контакты</a>
+							</div>
+							<div class="top-info">
+								<div class="top-phone">
+									<span>+375 29 531 78 28</span>
+								</div>
+								<a href="#feedback-popup" class="btn js-popup-inline" data-effect="mfp-zoom-in">Заказать звонок</a>
+								<div class="top-info-lang">
+									<div class="top-info-lang__view">
+										<div class="top-info-lang__icon"></div>
+										<div class="top-info-lang__txt">Рус</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page-header__bottom">
+							<div class="top-menu-second">
+								<div class="top-menu-second__item">
+									<a href="" class="top-menu-second__link">Размещение</a>
+								</div>
+								<div class="top-menu-second__item">
+									<a href="#" class="top-menu-second__link">Услуги</a>
+								</div>
+								<div class="top-menu-second__item">
+									<a href="#" class="top-menu-second__link">Развлечения</a>
+								</div>
+								<div class="top-menu-second__item">
+									<a href="#" class="top-menu-second__link">О комплексе</a>
+								</div>
+								<div class="top-menu-second__item">
+									<a href="#" class="top-menu-second__link">Ресторан</a>
+								</div>
+								<div class="top-menu-second__item">
+									<a href="#" class="top-menu-second__link">Детям</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="page-top__inner">
+					<div class="container-fluid">
+						<div class="page-top__title">
+							<h1>
+								О туристическом комплексе «Березинская дубрава»
+							</h1>
+						</div>
+						<div class="breadcrumbs">
+							<a href="#" class="breadcrumbs__item">Главная</a>
+							<span class="breadcrumbs__item">О комплексе</span>
+						</div>
+					</div>
 				</div>
-			</header>
+			</div>
 			<div class="wrapper">
 				<div class="page-content workarea">
 					<div class="container-fluid">
@@ -184,6 +240,32 @@
 								</div>
 							</div>
 							<br>
+						</div>
+						<div class="content-item content-item--img-left">
+							<div class="content-item__img">
+								<img src="img/content/test.jpg" alt="">
+							</div>
+							<div class="content-item__info">
+								Планируя отдых в домике у озера на лето, бронируйте желаемые даты заранее - это поможет избежать лишних трат и беспокойства во время горячего сезона. Вы можете забронировать домик самостоятельно на сайте или обратиться к нам по телефону или электронной почте. Мы подберём максимально комфортный вариант размещения. Цены указаны за весь домик полностью:
+							</div>
+						</div>
+						<div class="bl-indent">
+							<p>
+								У каждого дома есть большая огороженная территория с террасой, шезлонгами и собственной барбекю-беседкой, где Вас никто не побеспокоит. 
+							</p>
+							<p>
+								Мы поможем насладиться природой и прочувствовать Браславские озёра на базе отдыха с высоким уровнем комфорта и обслуживания.
+							</p>
+						</div>
+						<div class="content-item content-item--img-right">
+							<div class="content-item__img">
+								<img src="img/content/test.jpg" alt="">
+							</div>
+							<div class="content-item__info">
+								Планируя отдых в домике у озера на лето, бронируйте желаемые даты заранее - это поможет избежать лишних трат и беспокойства во время горячего сезона. Вы можете забронировать домик самостоятельно на сайте или обратиться к нам по телефону или электронной почте. Мы подберём максимально комфортный вариант размещения. Цены указаны за весь домик полностью:
+							</div>
+						</div>
+						<div class="bl-indent">
 							<h4>Форма обратной связи</h4>
 							<div class="submit-form">
 								<form action="#" method="post">
@@ -214,9 +296,16 @@
 										<div class="input-wrap__title">Название поля для ввода</div>
 										<textarea placeholder="Опишите себя или задайте вопрос"></textarea>
 									</div>
-									<div class="input-wrap">
+									<div class="input-wrap input-wrap--calendar">
 										<div class="input-wrap__title">Название поля для ввода</div>
 										<input type="text" placeholder="Выберите даты поездки" class="input-calendar">
+									</div>
+									<div class="input-wrap input-wrap--error">
+										<div class="input-wrap__title">Укажите ваше имя и фамилию</div>
+										<input type="text" placeholder="Плейсходер">
+										<div class="error-message">
+											Проверьте правильность указанной электронной почты
+										</div>
 									</div>
 									<div class="input-wrap">
 										<div class="input-wrap__title">Название поля для ввода</div>
@@ -227,6 +316,7 @@
 											<option>Test 3</option>
 										</select>
 									</div>
+									<button type="submit" class="btn-submit">Написать нам</button>
 								</form>
 							</div>
 							<p>
@@ -449,6 +539,8 @@
 								<a href="#" class="paging__item">8</a>
 								<a href="#" class="paging__item paging__item--next">Вперед</a>
 							</div>
+							<br><br>
+							<a href="#feedback-popup" class="btn js-popup-inline" data-effect="mfp-zoom-in">Заказать звонок</a>
 						</div>
 					<!--end CONTENT-PART -->
 					</div>
@@ -470,7 +562,7 @@
 							<div class="page-footer-phone">
 								<span>+375 29 531 78 28</span>
 							</div>
-							<a href="#" class="page-footer-phone__btn">
+							<a href="#feedback-popup" class="page-footer-phone__btn js-popup-inline" data-effect="mfp-zoom-in">
 								Заказать звонок
 							</a>
 						</div>
@@ -494,8 +586,39 @@
 					</div>
 				</div>
 			</footer>
-			
 		</div><!-- END LAYOUT-->
+
+		<div id="feedback-popup" class="popup mfp-with-anim mfp-hide">
+			<h2>Обратная связь</h2>
+			<div class="submit-form">
+				<form action="#" method="post">
+					<div class="input-wrap">
+						<div class="input-wrap__title">Название поля для ввода</div>
+						<input type="text" placeholder="Плейсходер">
+					</div>
+					<div class="input-wrap">
+						<div class="input-wrap__title">Выберите один из вариантов</div>
+						<div class="checkbox-wrap">
+							<input type="checkbox" id="popup-checkbox1" name="checkbox">
+							<label for="popup-checkbox1">Выберите один из параметров</label>
+						</div>
+						<div class="radio-wrap">
+							<input type="radio" id="popup-radio1" name="v">
+							<label for="popup-radio1">Только один из параметров</label>
+						</div>
+						<div class="radio-wrap">
+							<input type="radio" id="popup-radio2" name="v" checked="">
+							<label for="popup-radio2">Активный выбранный пункт</label>
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-wrap__title">Название поля для ввода</div>
+						<textarea placeholder="Опишите себя или задайте вопрос"></textarea>
+					</div>
+					<button type="submit" class="btn-submit">Написать нам</button>
+				</form>
+			</div>
+		</div>
 		
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0FTwSLUL-C1FOgm1oxIc1r3pCU102WNw"></script>
 		<script src="js/libs.min.js"></script>
