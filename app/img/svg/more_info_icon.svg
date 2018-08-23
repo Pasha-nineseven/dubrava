@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>svg/text/more_info_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="png_pages/berezdubrava_text_03" transform="translate(-850.000000, -9983.000000)">
+            <g id="Всплывающее-с-текстом" transform="translate(423.000000, 9845.000000)">
+                <g id="svg/text/more_info_icon" transform="translate(428.000000, 139.000000)">
+                    <circle id="Oval-7" stroke="#BBEE2A" stroke-width="2" fill="#FFFFFF" cx="12" cy="12" r="12"></circle>
+                    <text id="?" font-family="Lato-Bold, Lato" font-size="16" font-weight="bold" fill="#12824B">
+                        <tspan x="8" y="18">?</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

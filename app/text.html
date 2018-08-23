@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>test</title>
+		<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+		<link href="css/libs.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout">
+			<div class="page-top" style="background-image: url(img/content/test2.jpg);">
+				<header class="page-header">
+					<div class="container-fluid">
+						<a href="#" class="top-logo"></a>
+						<div class="page-header__top">
+							<div class="top-menu">
+								<a href="#" class="top-menu__item">Новости</a>
+								<a href="#" class="top-menu__item">Галерея</a>
+								<span class="top-menu__item active">Контакты</span>
+							</div>
+							<div class="top-info">
+								<div class="top-phone">
+									<span>+375 29 531 78 28</span>
+								</div>
+								<a href="#feedback-popup" class="btn js-popup-inline" data-effect="mfp-zoom-in">Заказать звонок</a>
+								<div class="top-info-lang">
+									<a href="#" class="top-info-lang__view">
+										<div class="top-info-lang__icon" style="background-image: url(img/svg/header_russia_flag.svg)"></div>
+										<div class="top-info-lang__txt">Рус</div>
+									</a>
+								</div>
+							</div>
+							<a href="#" class="menu-btn">
+								<span class="burger-icon"></span>
+							</a>
+						</div>
+						<div class="page-header__bottom">
+							<div class="top-menu-second">
+								<div class="top-menu-second__item">
+									<a href="" class="top-menu-second__link">Размещение</a>
+								</div>
+								<div class="top-menu-second__item submenu">
+									<a href="#" class="top-menu-second__link">Услуги</a>
+									<div class="submenu__list">
+										<div class="container-fluid">
+											<div class="submenu__wrapper">
+												<a href="#" class="submenu__item">
+													<span>Охота</span>
+													<div class="submenu-bg__item" style="background-image: url(img/content/bg1.jpg);"></div>
+												</a>
+												<a href="#" class="submenu__item">
+													<span>Рыбалка</span>
+													<div class="submenu-bg__item" style="background-image: url(img/content/bg2.jpg);"></div>
+												</a>
+												<a href="#" class="submenu__item">
+													<span>Фотоохота</span>
+													<div class="submenu-bg__item" style="background-image: url(img/content/bg1.jpg);"></div>
+												</a>
+												<a href="#" class="submenu__item">
+													<span>Тир и стрельба из лука</span>
+													<div class="submenu-bg__item" style="background-image: url(img/content/bg2.jpg);"></div>
+												</a>
+												<a href="#" class="submenu__item">
+													<span>Вольер с животными</span>
+													<div class="submenu-bg__item" style="background-image: url(img/content/bg1.jpg);"></div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="top-menu-second__item">
+									<a href="#" class="top-menu-second__link">Развлечения</a>
+								</div>
+								<div class="top-menu-second__item">
+									<a href="#" class="top-menu-second__link">О комплексе</a>
+								</div>
+								<div class="top-menu-second__item">
+									<a href="#" class="top-menu-second__link">Ресторан</a>
+								</div>
+								<div class="top-menu-second__item">
+									<span class="top-menu-second__link active">Детям</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-mobile">
+						<div class="menu-mobile__inner">
+							<a href="#" class="menu-mobile__close"></a>
+							<div class="menu-mobile-top">
+								<a href="#" class="menu-mobile-top__link">
+									Новости
+								</a>
+								<a href="#" class="menu-mobile-top__link">
+									Галерея
+								</a>
+								<a href="#" class="menu-mobile-top__link">
+									Контакты
+								</a>
+							</div>
+							<div class="menu-mobile-second">
+								<div class="menu-mobile-second__wrap">
+									<div class="menu-mobile-second__item">
+										<a href="#" class="menu-mobile-second__link">Размещение</a>
+									</div>
+									<div class="menu-mobile-second__item">
+										<a href="#" class="menu-mobile-second__link menu-mobile-second__link--submenu">Услуги</a>
+									</div>
+									<div class="menu-mobile-second__item">
+										<a href="#" class="menu-mobile-second__link">Развлечения</a>
+									</div>
+									<div class="menu-mobile-second__item">
+										<a href="#" class="menu-mobile-second__link">О коплексе</a>
+									</div>
+									<div class="menu-mobile-second__item">
+										<a href="#" class="menu-mobile-second__link">Ресторан</a>
+									</div>
+									<div class="menu-mobile-second__item">
+										<a href="#" class="menu-mobile-second__link">Детям</a>
+									</div>
+								</div>
+
+								<div class="menu-mobile-third">
+									<a href="#" class="menu-mobile-third__back">Услуги</a>
+									<a href="#" class="menu-mobile-third__link">
+										Охота
+									</a>
+									<a href="#" class="menu-mobile-third__link">
+										Рыбалка
+									</a>
+									<a href="#" class="menu-mobile-third__link">
+										Фотоохота
+									</a>
+									<a href="#" class="menu-mobile-third__link">
+										Тир и стрельба из лука
+									</a>
+									<a href="#" class="menu-mobile-third__link">
+										Вольер с животными
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="page-top__inner">
+					<div class="container-fluid">
+						<div class="page-top__title">
+							<h1>
+								О туристическом комплексе «Березинская дубрава»
+							</h1>
+						</div>
+						<div class="breadcrumbs">
+							<a href="#" class="breadcrumbs__item">Главная</a>
+							<span class="breadcrumbs__item">О комплексе</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="page-content workarea">
+					<div class="container-fluid">
+					<!-- CONTENT-PART -->
+						<div class="bl-indent">
+							<p>
+								Меню ресторана создаётся под руководством известного итальянского шеф-повара Алессио Моизе, при участии лучших поваров Беларуси. Особенность ресторана – карта вин, открытая кухня с приготовлением блюд на открытом огне и настоящая <a href="#">итальянская</a> пицца.
+							</p>
+							<p>
+								Отдых в Беларуси летом - это прекрасная возможность <a href="#">ховер на ссылку</a>, не тратя время на длительные перелеты и силы на акклиматизацию. Жемчужина Беларуси - Национальный парк "Браславские озера", место, куда стремятся все, кто любит настоящую живую природу, огромные просторы, вкусную свежую еду и активный отдых.
+							</p>
+							<p>
+								Туристический комплекс <small>комплекса</small> расположен на <strong>Браславских</strong> озерах на берегу озера Снуды - у нас Вы прекрасно проведете время всей семьей или компанией друзей, сможете отметить праздники или организовать корпоративные мероприятия.
+							</p>
+							<blockquote>
+								Бронируйте желаемые даты заранее - это поможет<br> избежать лишних трат и беспокойства во время горячего<br> сезона
+							</blockquote>
+							<p>
+								Если Вы цените комфорт и европейское качество обслуживание, хотите побыть наедине с природой, насладиться живописными ландшафтами и окунуться в славянские традиции - значит отдых в Беларуси в домиках в туристическом комплексе Green Club - станет для Вас идеальным решением.
+							</p>
+							<div class="img-wrap">
+								<img src="img/content/test.jpg" alt="">
+								<div class="signature">
+									Вид на центральный причал у гостиничного комплекса.
+								</div>
+							</div>
+							<p>
+								Отдых в Беларуси летом - это прекрасная возможность провести отпуск, не тратя время на длительные перелеты и силы на акклиматизацию. Жемчужина Беларуси - Национальный парк "Браславские озера", место, куда стремятся все, кто любит настоящую живую природу, огромные просторы, вкусную свежую еду и активный отдых.
+							</p>		
+							<h1>Заголовок H1</h1>
+							<h2>Заголовок H2</h2>
+							<h3>Заголовок H3</h3>
+							<h4>Заголовок H4</h4>
+							<h5>Заголовок H5</h5>
+							<h6>Заголовок H6</h6>
+							<p>
+								Отдых в Беларуси летом - это прекрасная возможность провести отпуск, не тратя время на длительные перелеты и силы на акклиматизацию. Жемчужина Беларуси - Национальный парк "Браславские озера", место, куда стремятся все, кто любит настоящую живую природу, огромные просторы, вкусную свежую еду и активный отдых.
+							</p>
+							<h4>Списки в тексте</h4>
+							<p>
+								Планируя отдых в домике у озера на лето, бронируйте желаемые даты заранее - это поможет избежать лишних трат и беспокойства во время горячего сезона. Вы можете забронировать домик самостоятельно на сайте или обратиться к нам по телефону или электронной почте. Мы подберём максимально комфортный вариант размещения. Цены указаны за весь домик полностью:
+							</p>
+							<ol>
+								<li>Дом у ручья</li>
+								<li>Дом у озера</li>
+								<li>Дом у яблони</li>
+								<li>Дом у маяка</li>
+								<li>
+									Дом у мельницы
+									<ol>
+										<li>Заманчивые акционные предложения и сезонные скидки.</li>
+										<li>Можно приятно провести выходные с рабочим коллективом. Мы поможем вам в организации квестов и тематических мероприятий в комфортных условиях спа-отеля «Ислочь-Парк».</li>
+										<li>Есть возможность сделать незабываемый подарок любимому человеку – приобрести сертификат в наш комплекс</li>
+									</ol>
+								</li>
+								<li>
+									Test
+								</li>
+							</ol>
+							<p>
+								Вы можете забронировать домик самостоятельно на сайте или обратиться к нам по телефону или электронной почте.
+							</p>
+							<p>
+								Мы подберём максимально комфортный вариант размещения. Цены указаны за весь домик полностью:
+							</p>
+							<ul>
+								<li>Клубная карта</li>
+								<li>Схема проезда</li>
+								<li>
+									Программа релаксации для двоих:
+									<ul>
+										<li>SPA-процедуры для женщин, мужчин и детей.</li>
+										<li>Аренду оборудованных беседок.</li>
+										<li>Стильную аквазону (хамам, бассейн, сауна)</li>
+									</ul>
+								</li>
+								<li>Туры выходного дня, позволяющие преодолеть стресс и усталость.</li>
+								<li>Аренду уютной бани</li>
+							</ul>
+						</div>
+						<div class="img-wrap">
+							<img src="img/content/test2.jpg" alt="">
+							<div class="signature">
+								Картинка на всю ширину. Вид на центральный причал у гостиничного комплекса.
+							</div>
+						</div>
+						<div class="bl-indent">
+							<h4>Таблица</h4>
+							<p>
+								Планируя отдых в домике у озера на лето, бронируйте желаемые даты заранее - это поможет избежать лишних трат и беспокойства во время горячего сезона. Вы можете забронировать домик самостоятельно на сайте или обратиться к нам по телефону или электронной почте. Мы подберём максимально комфортный вариант размещения. Цены указаны за весь домик полностью:
+							</p>
+							<table>
+								<tr>
+									<th>
+										Тип отдыха
+									</th>
+									<th>Количество человек</th>
+									<th>Завтрак</th>
+									<th>Стоимость</th>
+								</tr>
+								<tr>
+									<td>Комфортный дом</td>
+									<td>
+										2 человека
+										<sup class="note">*</sup>
+									</td>
+									<td>Включен</td>
+									<td>321.00 руб.</td>
+								</tr>
+								<tr>
+									<td>Номер в гостинице</td>
+									<td>2 человека</td>
+									<td>Нет</td>
+									<td>321.00 руб.</td>
+								</tr>
+								<tr>
+									<td>Комфортный дом</td>
+									<td>2 человека</td>
+									<td>Включен</td>
+									<td>321.00 руб.</td>
+								</tr>
+								<tr>
+									<td>Номер в гостинице</td>
+									<td>2 человека</td>
+									<td>Нет</td>
+									<td>321.00 руб.</td>
+								</tr>
+							</table>
+							<div class="table-note">
+								<sup class="note">*</sup>– максимальное количество человек для стандартного номера
+							</div>
+							<div class="video-wrap">
+								<div class="video-wrap__img">
+									<img src="img/content/test.jpg" alt="">
+									<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="video-wrap__link js-video" data-effect="mfp-zoom-in"></a>
+								</div>
+								<div class="signature">
+									Вид на центральный причал у гостиничного комплекса.
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									Планируя отдых в домике у озера на лето, бронируйте желаемые даты заранее - это поможет избежать лишних трат и беспокойства во время горячего сезона. 
+								</div>
+								<div class="col-md-6">
+									Мы подберём максимально комфортный вариант размещения. Цены указаны за весь домик полностью:
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-md-4">
+									Современный туристический комплекс на Браславских озерах, расположенный на территории Национального парка «Браславские озёра». 
+								</div>
+								<div class="col-md-4">
+									Это одно из лучших места отдыха в Белоруссии. Комплекс находится на берегу озера Снуды.
+								</div>
+								<div class="col-md-4">
+									С одной стороны комплекс окружен хвойными и лиственными лесами.
+								</div>
+							</div>
+							<br>
+						</div>
+						<div class="content-item content-item--img-left">
+							<div class="content-item__img">
+								<img src="img/content/test.jpg" alt="">
+							</div>
+							<div class="content-item__info">
+								Планируя отдых в домике у озера на лето, бронируйте желаемые даты заранее - это поможет избежать лишних трат и беспокойства во время горячего сезона. Вы можете забронировать домик самостоятельно на сайте или обратиться к нам по телефону или электронной почте. Мы подберём максимально комфортный вариант размещения. Цены указаны за весь домик полностью:
+							</div>
+						</div>
+						<div class="bl-indent">
+							<p>
+								У каждого дома есть большая огороженная территория с террасой, шезлонгами и собственной барбекю-беседкой, где Вас никто не побеспокоит. 
+							</p>
+							<p>
+								Мы поможем насладиться природой и прочувствовать Браславские озёра на базе отдыха с высоким уровнем комфорта и обслуживания.
+							</p>
+						</div>
+						<div class="content-item content-item--img-right">
+							<div class="content-item__img">
+								<img src="img/content/test.jpg" alt="">
+							</div>
+							<div class="content-item__info">
+								Планируя отдых в домике у озера на лето, бронируйте желаемые даты заранее - это поможет избежать лишних трат и беспокойства во время горячего сезона. Вы можете забронировать домик самостоятельно на сайте или обратиться к нам по телефону или электронной почте. Мы подберём максимально комфортный вариант размещения. Цены указаны за весь домик полностью:
+							</div>
+						</div>
+						<div class="bl-indent">
+							<h4>Форма обратной связи</h4>
+							<div class="submit-form">
+								<form action="#" method="post">
+									<div class="input-wrap">
+										<div class="input-wrap__title">Название поля для ввода</div>
+										<input type="text" placeholder="Плейсходер">
+									</div>
+									<div class="input-wrap">
+										<div class="input-wrap__title">Выберите один из вариантов</div>
+										<div class="checkbox-wrap">
+											<input type="checkbox" id="checkbox1" name="checkbox">
+											<label for="checkbox1">Выберите один из параметров</label>
+										</div>
+										<div class="checkbox-wrap">
+											<input type="checkbox" id="checkbox2" name="checkbox" checked="">
+											<label for="checkbox2">Активный выбранный пункт</label>
+										</div>
+										<div class="radio-wrap">
+											<input type="radio" id="radio1" name="v">
+											<label for="radio1">Только один из параметров</label>
+										</div>
+										<div class="radio-wrap">
+											<input type="radio" id="radio2" name="v" checked="">
+											<label for="radio2">Активный выбранный пункт</label>
+										</div>
+									</div>
+									<div class="input-wrap">
+										<div class="input-wrap__title">Название поля для ввода</div>
+										<textarea placeholder="Опишите себя или задайте вопрос"></textarea>
+									</div>
+									<div class="input-wrap input-wrap--calendar">
+										<div class="input-wrap__title">Название поля для ввода</div>
+										<input type="text" placeholder="Выберите даты поездки" class="input-calendar">
+									</div>
+									<div class="input-wrap input-wrap--error">
+										<div class="input-wrap__title">Укажите ваше имя и фамилию</div>
+										<input type="text" placeholder="Плейсходер">
+										<div class="error-message">
+											Проверьте правильность указанной электронной почты
+										</div>
+									</div>
+									<div class="input-wrap">
+										<div class="input-wrap__title">Название поля для ввода</div>
+										<select class="fs" data-placeholder="Селект">
+											<option></option>
+											<option>Test 1</option>
+											<option>Test 2</option>
+											<option>Test 3</option>
+										</select>
+									</div>
+									<button type="submit" class="btn-submit">Написать нам</button>
+								</form>
+							</div>
+							<p>
+								У каждого дома есть большая огороженная территория с террасой, шезлонгами и собственной барбекю-беседкой, где Вас никто не побеспокоит. 
+							</p>
+							<p>
+								Мы поможем насладиться природой и прочувствовать Браславские озёра на базе отдыха с высоким уровнем комфорта и обслуживания.
+								<span class="hint">
+									<a href="#" class="hint__link js-hint__link"></a>
+									<span class="hint__info">
+										<a href="#" class="hint__close js-hint__close"></a>
+										<span>
+											У каждого дома есть большая огороженная территория с террасой, шезлонгами и собственной барбекю-беседкой, где Вас никто не побеспокоит. 
+										</span>
+										<span>
+											Мы поможем насладиться природой и прочувствовать Браславские озёра на базе отдыха с высоким уровнем комфорта и обслуживания.
+										</span>
+									</span>
+								</span>
+							</p>
+						</div>
+						<div class="map-default">
+							<div id="map-default"></div>
+						</div>
+						<div class="bl-indent">
+							<h4>Вопросы и ответы</h4>
+							<div class="accordeon">
+								<div class="accordeon__item">
+									<a href="#" class="accordeon__link">
+										Аренда и подготовка конференц-зала и лаунжа
+									</a>
+									<div class="accordeon__info">
+										<a href="#" class="accordeon__close js-accordeon__close"></a>
+										<p>
+											У каждого дома есть большая огороженная территория с террасой, шезлонгами и собственной барбекю-беседкой, где Вас никто не побеспокоит. 
+										</p>
+										<p>
+											Мы поможем насладиться природой и прочувствовать Браславские озёра на базе отдыха с высоким уровнем комфорта и обслуживания..
+										</p>
+									</div>
+								</div>
+								<div class="accordeon__item">
+									<a href="#" class="accordeon__link">
+										Аренда и подготовка конференц-оборудования
+									</a>
+									<div class="accordeon__info">
+										<a href="#" class="accordeon__close js-accordeon__close"></a>
+										<p>
+											У каждого дома есть большая огороженная территория с террасой, шезлонгами и собственной барбекю-беседкой, где Вас никто не побеспокоит. 
+										</p>
+										<p>
+											Мы поможем насладиться природой и прочувствовать Браславские озёра на базе отдыха с высоким уровнем комфорта и обслуживания..
+										</p>
+									</div>
+								</div>
+								<div class="accordeon__item">
+									<a href="#" class="accordeon__link">
+										Проведение банкетов, фуршетов, кофе-пауз
+									</a>
+									<div class="accordeon__info">
+										<a href="#" class="accordeon__close js-accordeon__close"></a>
+										<p>
+											У каждого дома есть большая огороженная территория с террасой, шезлонгами и собственной барбекю-беседкой, где Вас никто не побеспокоит. 
+										</p>
+										<p>
+											Мы поможем насладиться природой и прочувствовать Браславские озёра на базе отдыха с высоким уровнем комфорта и обслуживания..
+										</p>
+									</div>
+								</div>
+								<div class="accordeon__item">
+									<a href="#" class="accordeon__link">
+										Организация развлекательных и рекреационных программ
+									</a>
+									<div class="accordeon__info">
+										<a href="#" class="accordeon__close js-accordeon__close"></a>
+										<p>
+											У каждого дома есть большая огороженная территория с террасой, шезлонгами и собственной барбекю-беседкой, где Вас никто не побеспокоит. 
+										</p>
+										<p>
+											Мы поможем насладиться природой и прочувствовать Браславские озёра на базе отдыха с высоким уровнем комфорта и обслуживания..
+										</p>
+									</div>
+								</div>
+								<div class="accordeon__item">
+									<a href="#" class="accordeon__link">
+										Экскурсионное обслуживание
+									</a>
+									<div class="accordeon__info">
+										<a href="#" class="accordeon__close js-accordeon__close"></a>
+										<p>
+											У каждого дома есть большая огороженная территория с террасой, шезлонгами и собственной барбекю-беседкой, где Вас никто не побеспокоит. 
+										</p>
+										<p>
+											Мы поможем насладиться природой и прочувствовать Браславские озёра на базе отдыха с высоким уровнем комфорта и обслуживания..
+										</p>
+									</div>
+								</div>
+								<div class="accordeon__item">
+									<a href="#" class="accordeon__link">
+										Трансфер
+									</a>
+									<div class="accordeon__info">
+										<a href="#" class="accordeon__close js-accordeon__close"></a>
+										<p>
+											У каждого дома есть большая огороженная территория с террасой, шезлонгами и собственной барбекю-беседкой, где Вас никто не побеспокоит. 
+										</p>
+										<p>
+											Мы поможем насладиться природой и прочувствовать Браславские озёра на базе отдыха с высоким уровнем комфорта и обслуживания..
+										</p>
+									</div>
+								</div>
+								<div class="accordeon__item">
+									<a href="#" class="accordeon__link">
+										Услуги бизнес-центра
+									</a>
+									<div class="accordeon__info">
+										<a href="#" class="accordeon__close js-accordeon__close"></a>
+										<p>
+											У каждого дома есть большая огороженная территория с террасой, шезлонгами и собственной барбекю-беседкой, где Вас никто не побеспокоит. 
+										</p>
+										<p>
+											Мы поможем насладиться природой и прочувствовать Браславские озёра на базе отдыха с высоким уровнем комфорта и обслуживания..
+										</p>
+									</div>
+								</div>
+							</div>
+							<h4>Скачать файлы</h4>
+							<a href="img/content/test.jpg" download class="download">
+								<span class="download__icon">
+									<img src="img/svg/file_folder_icon.svg" alt="">
+								</span>
+								Договор на аренду дома
+								<span>, pdf 245 Кб</span>
+							</a>
+							<a href="img/content/test.jpg" download class="download">
+								<span class="download__icon">
+									<img src="img/svg/file_doc.svg" alt="">
+								</span>
+								Договор на аренду дома
+								<span>, pdf 245 Кб</span>
+							</a>
+							<a href="img/content/test.jpg" download class="download">
+								<span class="download__icon">
+									<img src="img/svg/file_folder_icon.svg" alt="">
+								</span>
+								Договор на аренду дома
+								<span>, pdf 245 Кб</span>
+							</a>
+							<a href="img/content/test.jpg" download class="download">
+								<span class="download__icon">
+									<img src="img/svg/file_icon_rar.svg" alt="">
+								</span>
+								Архив документов на аренду дома
+								<span>, pdf 245 Кб</span>
+							</a>
+							<br>
+							<div class="resp-tabs">
+							    <ul>
+							        <li><a href="#tab-1">Скачать файлы</a></li>
+							        <li><a href="#tab-2">Вкладка номер два</a></li>
+							        <li><a href="#tab-3">Вкладка номер три</a></li>
+							        <li><a href="#tab-4">Вкладка номер 4</a></li>
+							    </ul>
+
+							    <div id="tab-1">
+							    	<p>
+							    		Планируя отдых в домике у озера на лето, бронируйте желаемые даты заранее - это поможет избежать лишних трат и беспокойства во время горячего сезона. Вы можете забронировать домик самостоятельно на сайте или обратиться к нам по телефону или электронной почте. Мы подберём максимально комфортный вариант размещения. Цены указаны за весь домик полностью:
+							    	</p>
+							    	<div class="img-wrap">
+										<img src="img/content/test.jpg" alt="">
+										<div class="signature">
+											Вид на центральный причал у гостиничного комплекса.
+										</div>
+									</div>
+							    </div>
+							    <div id="tab-2">
+							    	<p>
+							    		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ipsa magnam facilis labore ipsam dolor consequuntur dolores, sunt, natus nesciunt fugiat sequi vitae saepe consequatur deserunt tenetur illo adipisci minus.
+							    	</p>
+							    </div>
+							    <div id="tab-3">
+							    	<p>
+							    		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum labore quas placeat, autem impedit obcaecati, maiores quis corporis voluptatum. Velit similique dolorum id dicta odio cumque culpa, deleniti aliquam.</span><span>Dicta itaque ducimus esse atque incidunt, delectus asperiores nobis distinctio recusandae, blanditiis, ipsa ipsam harum exercitationem. Cum, non. Ad ratione eveniet reprehenderit aliquam hic autem recusandae illo consequatur aperiam porro.</span>
+							    	</p>
+							    </div>
+							    <div id="tab-4">
+							    	<p>
+							    		Планируя отдых в домике у озера на лето, бронируйте желаемые даты заранее - это поможет избежать лишних трат и беспокойства во время горячего сезона. Вы можете забронировать домик самостоятельно на сайте или обратиться к нам по телефону или электронной почте. Мы подберём максимально комфортный вариант размещения. Цены указаны за весь домик полностью:
+							    	</p>
+							    </div>
+							</div>
+							<p>
+								Планируя отдых в домике у озера на лето, бронируйте желаемые даты заранее - это поможет избежать лишних трат и беспокойства во время горячего сезона. Вы можете забронировать домик самостоятельно на сайте или обратиться к нам по телефону или электронной почте. Мы подберём максимально комфортный вариант размещения. Цены указаны за весь домик полностью:
+							</p>
+						</div>
+						<div class="content-item content-item--img-left">
+							<div class="content-item__img">
+								<img src="img/content/test.jpg" alt="">
+							</div>
+							<div class="content-item__info">
+								Планируя отдых в домике у озера на лето, бронируйте желаемые даты заранее - это поможет избежать лишних трат и беспокойства во время горячего сезона. Вы можете забронировать домик самостоятельно на сайте или обратиться к нам по телефону или электронной почте. Мы подберём максимально комфортный вариант размещения. Цены указаны за весь домик полностью:
+							</div>
+						</div>
+						<div class="bl-indent">
+							<p>
+								У каждого дома есть большая огороженная территория с террасой, шезлонгами и собственной барбекю-беседкой, где Вас никто не побеспокоит. 
+							</p>
+							<p>
+								Мы поможем насладиться природой и прочувствовать Браславские озёра на базе отдыха с высоким уровнем комфорта и обслуживания.
+							</p>
+						</div>
+						<div class="content-item content-item--img-right">
+							<div class="content-item__img">
+								<img src="img/content/test.jpg" alt="">
+							</div>
+							<div class="content-item__info">
+								Планируя отдых в домике у озера на лето, бронируйте желаемые даты заранее - это поможет избежать лишних трат и беспокойства во время горячего сезона. Вы можете забронировать домик самостоятельно на сайте или обратиться к нам по телефону или электронной почте. Мы подберём максимально комфортный вариант размещения. Цены указаны за весь домик полностью:
+							</div>
+						</div>
+						<div class="paging">
+							<a href="#" class="paging__item paging__item--prev">Назад</a>
+							<span class="paging__item active">1</span>
+							<a href="#" class="paging__item">2</a>
+							<a href="#" class="paging__item">3</a>
+							<a href="#" class="paging__item">4</a>
+							<a href="#" class="paging__item paging__item--more">...</a>
+							<a href="#" class="paging__item">8</a>
+							<a href="#" class="paging__item paging__item--next">Вперед</a>
+						</div>
+						<br><br>
+						<a href="#feedback-popup" class="btn js-popup-inline" data-effect="mfp-zoom-in">Заказать звонок</a>
+					<!--end CONTENT-PART -->
+					</div>
+				</div>
+			</div>
+			<footer class="page-footer">
+				<div class="container-fluid">
+					<div class="page-footer-top">
+						<span class="page-footer-top__icon"></span>
+						<div class="page-footer-top__item">
+							<div class="socials">
+								<a href="#" class="socials__item socials__item--fb"></a>
+								<a href="#" class="socials__item socials__item--inst"></a>
+								<a href="#" class="socials__item socials__item--vk"></a>
+							</div>
+							<a href="mailto:arenda@b-d.by" class="page-footer__mail">arenda@b-d.by</a>
+						</div>
+						<div class="page-footer-top__item">
+							<div class="page-footer-phone">
+								<span>+375 29 531 78 28</span>
+							</div>
+							<a href="#feedback-popup" class="page-footer-phone__btn js-popup-inline" data-effect="mfp-zoom-in">
+								Заказать звонок
+							</a>
+						</div>
+					</div>
+					<div class="page-footer-info">
+						<div class="page-footer-info__item">
+							2018 &copy; 2018 «Березинская Дубрава»,<br>
+							ЖК «Софийский»
+						</div>
+						<div class="page-footer-info__item">
+							225056, Брестская область, Брестский район, Знаменский сельсовет 47/1,<br>
+							район поселка Белое озеро, 27-ой км трассы Брест‑Домачево
+						</div>
+						<div class="page-footer-info__item">
+							Наши координаты
+							<div class="coords">N:51°82'01.11'' E:23°70'07.93''</div>
+						</div>
+					</div>
+					<div class="develop">
+						Сделано в <a href="https://nineseven.by/" target="_blank"></a>
+					</div>
+				</div>
+			</footer>
+		</div><!-- END LAYOUT-->
+
+		<div id="feedback-popup" class="popup mfp-with-anim mfp-hide">
+			<h2>Обратная связь</h2>
+			<div class="submit-form">
+				<form action="#" method="post">
+					<div class="input-wrap">
+						<div class="input-wrap__title">Название поля для ввода</div>
+						<input type="text" placeholder="Плейсходер">
+					</div>
+					<div class="input-wrap">
+						<div class="input-wrap__title">Выберите один из вариантов</div>
+						<div class="checkbox-wrap">
+							<input type="checkbox" id="popup-checkbox1" name="checkbox">
+							<label for="popup-checkbox1">Выберите один из параметров</label>
+						</div>
+						<div class="radio-wrap">
+							<input type="radio" id="popup-radio1" name="v">
+							<label for="popup-radio1">Только один из параметров</label>
+						</div>
+						<div class="radio-wrap">
+							<input type="radio" id="popup-radio2" name="v" checked="">
+							<label for="popup-radio2">Активный выбранный пункт</label>
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input-wrap__title">Название поля для ввода</div>
+						<textarea placeholder="Опишите себя или задайте вопрос"></textarea>
+					</div>
+					<button type="submit" class="btn-submit">Написать нам</button>
+				</form>
+			</div>
+		</div>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0FTwSLUL-C1FOgm1oxIc1r3pCU102WNw"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="js/snazzy-info-window.min.js"></script>
+		<script src="js/interface.js"></script>
+		<script src="js/map.js"></script>
+	</body>
+</html>

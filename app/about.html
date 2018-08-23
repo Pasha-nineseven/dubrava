@@ -26,7 +26,7 @@
 							<div class="top-menu">
 								<a href="#" class="top-menu__item">Новости</a>
 								<a href="#" class="top-menu__item">Галерея</a>
-								<a href="#" class="top-menu__item">Контакты</a>
+								<span class="top-menu__item active">Контакты</span>
 							</div>
 							<div class="top-info">
 								<div class="top-phone">
@@ -34,20 +34,49 @@
 								</div>
 								<a href="#feedback-popup" class="btn js-popup-inline" data-effect="mfp-zoom-in">Заказать звонок</a>
 								<div class="top-info-lang">
-									<div class="top-info-lang__view">
-										<div class="top-info-lang__icon"></div>
+									<a href="#" class="top-info-lang__view">
+										<div class="top-info-lang__icon" style="background-image: url(img/svg/header_russia_flag.svg)"></div>
 										<div class="top-info-lang__txt">Рус</div>
-									</div>
+									</a>
 								</div>
 							</div>
+							<a href="#" class="menu-btn">
+								<span class="burger-icon"></span>
+							</a>
 						</div>
 						<div class="page-header__bottom">
 							<div class="top-menu-second">
 								<div class="top-menu-second__item">
 									<a href="" class="top-menu-second__link">Размещение</a>
 								</div>
-								<div class="top-menu-second__item">
+								<div class="top-menu-second__item submenu">
 									<a href="#" class="top-menu-second__link">Услуги</a>
+									<div class="submenu__list">
+										<div class="container-fluid">
+											<div class="submenu__wrapper">
+												<a href="#" class="submenu__item">
+													<span>Охота</span>
+													<div class="submenu-bg__item" style="background-image: url(img/content/bg1.jpg);"></div>
+												</a>
+												<a href="#" class="submenu__item">
+													<span>Рыбалка</span>
+													<div class="submenu-bg__item" style="background-image: url(img/content/bg2.jpg);"></div>
+												</a>
+												<a href="#" class="submenu__item">
+													<span>Фотоохота</span>
+													<div class="submenu-bg__item" style="background-image: url(img/content/bg1.jpg);"></div>
+												</a>
+												<a href="#" class="submenu__item">
+													<span>Тир и стрельба из лука</span>
+													<div class="submenu-bg__item" style="background-image: url(img/content/bg2.jpg);"></div>
+												</a>
+												<a href="#" class="submenu__item">
+													<span>Вольер с животными</span>
+													<div class="submenu-bg__item" style="background-image: url(img/content/bg1.jpg);"></div>
+												</a>
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="top-menu-second__item">
 									<a href="#" class="top-menu-second__link">Развлечения</a>
@@ -59,7 +88,64 @@
 									<a href="#" class="top-menu-second__link">Ресторан</a>
 								</div>
 								<div class="top-menu-second__item">
-									<a href="#" class="top-menu-second__link">Детям</a>
+									<span class="top-menu-second__link active">Детям</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-mobile">
+						<div class="menu-mobile__inner">
+							<a href="#" class="menu-mobile__close"></a>
+							<div class="menu-mobile-top">
+								<a href="#" class="menu-mobile-top__link">
+									Новости
+								</a>
+								<a href="#" class="menu-mobile-top__link">
+									Галерея
+								</a>
+								<a href="#" class="menu-mobile-top__link">
+									Контакты
+								</a>
+							</div>
+							<div class="menu-mobile-second">
+								<div class="menu-mobile-second__wrap">
+									<div class="menu-mobile-second__item">
+										<a href="#" class="menu-mobile-second__link">Размещение</a>
+									</div>
+									<div class="menu-mobile-second__item">
+										<a href="#" class="menu-mobile-second__link menu-mobile-second__link--submenu">Услуги</a>
+									</div>
+									<div class="menu-mobile-second__item">
+										<a href="#" class="menu-mobile-second__link">Развлечения</a>
+									</div>
+									<div class="menu-mobile-second__item">
+										<a href="#" class="menu-mobile-second__link">О коплексе</a>
+									</div>
+									<div class="menu-mobile-second__item">
+										<a href="#" class="menu-mobile-second__link">Ресторан</a>
+									</div>
+									<div class="menu-mobile-second__item">
+										<a href="#" class="menu-mobile-second__link">Детям</a>
+									</div>
+								</div>
+
+								<div class="menu-mobile-third">
+									<a href="#" class="menu-mobile-third__back">Услуги</a>
+									<a href="#" class="menu-mobile-third__link">
+										Охота
+									</a>
+									<a href="#" class="menu-mobile-third__link">
+										Рыбалка
+									</a>
+									<a href="#" class="menu-mobile-third__link">
+										Фотоохота
+									</a>
+									<a href="#" class="menu-mobile-third__link">
+										Тир и стрельба из лука
+									</a>
+									<a href="#" class="menu-mobile-third__link">
+										Вольер с животными
+									</a>
 								</div>
 							</div>
 						</div>
@@ -79,29 +165,36 @@
 						<div class="bl-indent page-top-list">
 							<div class="page-top-list__wrap">
 								<div class="page-top-list__item">
-									<a href="#" class="page-top-list__link" style="background-image: url(img/content/test.jpg);"></a>
+									<a href="img/content/test.jpg" class="page-top-list__link js-gallery" style="background-image: url(img/content/test.jpg);" data-effect="mfp-zoom-in" data-group="1"></a>
 								</div>
 								<div class="page-top-list__item">
-									<a href="#" class="page-top-list__link" style="background-image: url(img/content/test2.jpg);"></a>
+									<a href="img/content/test2.jpg" class="page-top-list__link js-gallery" style="background-image: url(img/content/test2.jpg);" data-effect="mfp-zoom-in" data-group="1"></a>
 								</div>
 								<div class="page-top-list__item">
-									<a href="#" class="page-top-list__link" style="background-image: url(img/content/test.jpg);"></a>
+									<a href="img/content/test.jpg" class="page-top-list__link js-gallery" style="background-image: url(img/content/test.jpg);" data-effect="mfp-zoom-in" data-group="1"></a>
 								</div>
 								<div class="page-top-list__item">
-									<a href="#" class="page-top-list__link" style="background-image: url(img/content/test2.jpg);"></a>
+									<a href="img/content/test2.jpg" class="page-top-list__link js-gallery" style="background-image: url(img/content/test2.jpg);" data-effect="mfp-zoom-in" data-group="1"></a>
 								</div>
 								<div class="page-top-list__item">
-									<a href="#" class="page-top-list__link" style="background-image: url(img/content/test.jpg);"></a>
+									<a href="img/content/test.jpg" class="page-top-list__link js-gallery" style="background-image: url(img/content/test.jpg);" data-effect="mfp-zoom-in" data-group="1"></a>
 								</div>
 								<div class="page-top-list__item">
-									<a href="#" class="page-top-list__link" style="background-image: url(img/content/test2.jpg);"></a>
+									<a href="img/content/test2.jpg" class="page-top-list__link js-gallery" style="background-image: url(img/content/test2.jpg);" data-effect="mfp-zoom-in" data-group="1"></a>
 								</div>
 								<div class="page-top-list__item">
 									<div class="page-top-list__link page-top-list__link--all">
-										<a href="#">
-											Еще фото
+										<a href="img/content/test.jpg" data-effect="mfp-zoom-in" data-group="1" class="js-gallery">
+											<i>Еще фото</i>
 											<span>26</span>
-										</a>	
+										</a>
+										<!-- hidden-list -->
+										<a href="img/content/test2.jpg" data-effect="mfp-zoom-in" data-group="1" class="dnone js-gallery"></a>
+										<a href="img/content/test.jpg" data-effect="mfp-zoom-in" data-group="1" class="dnone js-gallery"></a>
+										<a href="img/content/test2.jpg" data-effect="mfp-zoom-in" data-group="1" class="dnone js-gallery"></a>
+										<a href="img/content/test.jpg" data-effect="mfp-zoom-in" data-group="1" class="dnone js-gallery"></a>
+										<a href="img/content/test2.jpg" data-effect="mfp-zoom-in" data-group="1" class="dnone js-gallery"></a>
+										<!-- end hidden-list -->
 									</div>
 								</div>
 							</div>
@@ -157,9 +250,9 @@
 						<span class="page-footer-top__icon"></span>
 						<div class="page-footer-top__item">
 							<div class="socials">
-								<a href="#" class="socials__item"></a>
-								<a href="#" class="socials__item"></a>
-								<a href="#" class="socials__item"></a>
+								<a href="#" class="socials__item socials__item--fb"></a>
+								<a href="#" class="socials__item socials__item--inst"></a>
+								<a href="#" class="socials__item socials__item--vk"></a>
 							</div>
 							<a href="mailto:arenda@b-d.by" class="page-footer__mail">arenda@b-d.by</a>
 						</div>

@@ -17,7 +17,7 @@
 	</head>
 	<body>
 		<!--LAYOUT-->
-		<div class="layout">
+		<div class="layout layout--full">
 			<div class="page-top" style="background-image: url(img/content/test2.jpg);">
 				<header class="page-header">
 					<div class="container-fluid">
@@ -155,12 +155,13 @@
 					<div class="container-fluid">
 						<div class="page-top__title">
 							<h1>
-								О туристическом комплексе «Березинская дубрава»
+								Аппартаменты, домики и номера в гостинице
 							</h1>
 						</div>
 						<div class="breadcrumbs">
 							<a href="#" class="breadcrumbs__item">Главная</a>
-							<span class="breadcrumbs__item">О комплексе</span>
+							<a href="#" class="breadcrumbs__item">Услуги</a>
+							<span class="breadcrumbs__item">Апартаменты</span>
 						</div>
 					</div>
 				</div>
@@ -169,10 +170,65 @@
 				<div class="page-content workarea">
 					<div class="container-fluid">
 					<!-- CONTENT-PART -->
-						Главная страница
+						<div class="gallery">
+							<div class="gallery__item right-sqheme">
+								<div class="gallery__img" style="background-image: url(img/content/test.jpg);">
+									<div class="apartment-info">
+										<div class="apartment-info__inner">
+											<div class="apartment-info__title">
+												Аренда дома
+											</div>
+											<div class="apartment-list">
+												<div class="apartment-list__item">
+													<span>18</span>
+													спальных мест
+												</div>
+												<div class="apartment-list__item">
+													<span>4</span>
+													парковочных места
+												</div>
+												<div class="apartment-list__item">
+													<span>2</span>
+													детские площадки
+												</div>
+											</div>
+											<a href="#" class="btn-submit">Забронировать</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery__item left-sqheme">
+								<div class="gallery__img" style="background-image: url(img/content/test.jpg);"></div>
+								<div class="apartment-info">
+									<div class="apartment-info__inner">
+										<div class="apartment-info__title">
+											Номер в отеле
+										</div>
+										<div class="apartment-list">
+											<div class="apartment-list__item">
+												<span>4</span>
+												спальных места
+											</div>
+											<div class="apartment-list__item">
+												<span>2</span>
+												раздельные комнаты
+											</div>
+											<div class="apartment-list__item">
+												<span>1</span>
+												собственный балкон
+											</div>
+										</div>
+										<a href="#" class="btn-submit">Забронировать</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					<!--end CONTENT-PART -->
 					</div>
 				</div>
+			</div>
+			<div class="page-map">
+				<div id="page-map"></div>
 			</div>
 			<footer class="page-footer">
 				<div class="container-fluid">
@@ -251,7 +307,8 @@
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0FTwSLUL-C1FOgm1oxIc1r3pCU102WNw"></script>
 		<script src="js/libs.min.js"></script>
 		<script src="js/snazzy-info-window.min.js"></script>
-		<script src="js/interface.js"></script>
 		<script src="js/map.js"></script>
+		<script src="js/interface.js"></script>
+
 	</body>
 </html>

@@ -1,5 +1,5 @@
 .page-footer{
-	background: #0b1f16;
+	background: #0b1f16 url(../img/svg/footer_leaves.svg) left top no-repeat;
 	padding: 60px 0 33px;
 	color: #fff;
 }
@@ -9,23 +9,25 @@
 	justify-content: center;
 	font-size: 14px;
 	a{
-		width: 73px;
-		height: 18px;
-		background: red;
+		width: 101px;
+		height: 30px;
+		background: url(../img/svg/footer_logo_97.svg) no-repeat;
+		background-size: contain;
 		display: inline-block;
 		position: relative;
-		margin-left: 15px;
-		&:before{
-			content: "";
-			display: inline-block;
-			width: 91px;
-			height: 30px;
-			border: 2px solid #BBEE2A;
-			position: absolute;
-			left: -8px;
-			top: -5px;
-			transform: skewX(-10deg);
-		}
+		margin-left: 2px;
+		margin-top: -7px;
+		// &:before{
+		// 	content: "";
+		// 	display: inline-block;
+		// 	width: 91px;
+		// 	height: 30px;
+		// 	border: 2px solid #BBEE2A;
+		// 	position: absolute;
+		// 	left: -8px;
+		// 	top: -5px;
+		// 	transform: skewX(-10deg);
+		// }
 	}
 }
 
@@ -81,7 +83,7 @@
 	width: 20px;
 	height: 20px;
 	background: red;
-	margin-right: 42px;
+	margin-right: 44px;
 	position: relative;
 
 	&:after{
@@ -101,12 +103,30 @@
 			display: none;
 		}
 	}
+	&.socials__item--fb{
+		background: url(../img/svg/footer_cosial_facebook-logo.svg) no-repeat;
+		background-size: contain;
+		width: 11px;
+		height: 20px;
+	}
+	&.socials__item--inst{
+		background: url(../img/svg/footer_cosial_instagram.svg) no-repeat;
+		background-size: contain;
+		width: 20px;
+		height: 20px;
+	}
+	&.socials__item--vk{
+		background: url(../img/svg/footer_cosial_vk_logo.svg) no-repeat;
+		background-size: contain;
+		width: 23px;
+		height: 13px;
+	}
 }
 
 .page-footer__mail{
     margin-left: 87px;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none!important;
     font-size: 18px;
     margin-top: -12px;
 }
@@ -126,17 +146,26 @@
 	font-family: 'lato-bold';
 	background: #6CC644;
 	border-radius: 19px;
-	    padding: 3px 19px;
+	    padding: 2px 19px;
 	margin-left: 25px;
 	color: #fff;
 	text-decoration: none!important;
+	border: 2px solid transparent;
+	transition:all 0.3s ease;
+	&:hover{
+		border: 2px solid #BBEE2A;
+	}
+	&:active{
+		background: #BBEE2A;
+		border: 2px solid #BBEE2A;
+	}
 }
 
 .page-footer-top__icon{
     display: inline-block;
     width: 140px;
     height: 144px;
-    background: grey;
+    background: url(../img/svg/footer_logo.svg) no-repeat;
     position: absolute;
     left: 50%;
     margin-left: -70px;

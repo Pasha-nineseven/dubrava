@@ -4,7 +4,7 @@
 	padding: 50px;
 	width: auto;
 	max-width: 727px;
-	margin: 20px auto;
+	margin: 20px auto 50px;
 	input[type="text"],
 	input[type="email"],
 	input[type="password"]{
@@ -129,10 +129,9 @@
 	input[type="checkbox"]:not(:checked) + label:after,
 	input[type="checkbox"]:checked + label:after {
 		content: '';
-		// background: url('../img/svg/check_box.svg') center no-repeat;
-		background: red;
-		width: 25px;
-		height: 18px;
+		background: url('../img/svg/check.svg') center no-repeat;
+		width: 26px;
+		height: 19px;
 		display: inline-block;
 		position: absolute;
 		top: -1px;
@@ -272,4 +271,127 @@
     
   }
   
+}
+
+
+.mfp-bg{
+	background-color: #0B1F16;
+	opacity: 0.8;
+}
+
+
+.mfp-close-btn-in .mfp-close {
+    color: #fff;
+    background: #000;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    font-family: inherit;
+    font-size: 34px;
+    top: auto;
+    bottom: -17px;
+    opacity: 1;
+    right: auto;
+        left: 50%;
+    transform: translateX(-50%);
+        line-height: 1;
+    padding: 1px 12px;
+    display: inline-block;
+    transition: background 0.3s ease;
+    &:after{
+		content: 'Закрыть';
+		font-size: 20px;
+		color: #fff;
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: -10px;
+		margin-left: 10px;
+    }
+    &:hover{
+    	background:  #BBEE2A;
+    }
+    &:active{
+    	background: #6CC644; 
+    }
+}
+
+
+
+
+
+.mfp-arrow {
+    position: absolute;
+    opacity: 1;
+    margin: 0;
+    top: 50%;
+    margin-top: -28px;
+    padding: 0;
+        width: 56px;
+    height: 56px;
+    &:before{
+		content: "";
+		display: inline-block;
+		width: 56px;
+		height: 56px;
+		background: #fff;
+		position: absolute;
+		left: 0;
+		top: 0;
+		border-radius: 50%;
+		z-index: 1;
+		transition: all 0.3s ease;
+		margin: 0!important;
+		border: 0!important;
+    }
+    &:after{
+    	margin: 0!important;
+		border: 0!important;
+    }
+    &.mfp-arrow-left{
+    	left: 10px;
+    	&:after{
+    		content: "";
+		    display: inline-block;
+		    width: 19px;
+		    height: 32px;
+		    background: url(../img/svg/pagging_arrow_left.svg) no-repeat;
+		    background-size: contain;
+		    position: absolute;
+		    left: 18px;
+		    top: 11px;
+		    z-index: 2;
+    	}
+    }
+    &.mfp-arrow-right{
+    	right: 10px;
+    	&:after{
+			content: "";
+		    display: inline-block;
+		    width: 19px;
+		    height: 32px;
+		    background: url(../img/svg/pagging_arrow_right.svg) no-repeat;
+		    background-size: contain;
+		    position: absolute;
+		    left: 21px;
+		    top: 11px;
+		    z-index: 2;
+    	}
+    }
+
+    &:hover{
+    	&:before{
+			background: #BBEE2A;
+			transform: scale(1.1);
+    	}
+    }
+    &:active{
+    	&:before{
+    		background: #6CC644;
+    	}
+    }
+}
+
+
+.mfp-arrow:active {
+    margin-top: -28px!important;
 }

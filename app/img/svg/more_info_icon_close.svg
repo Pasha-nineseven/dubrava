@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>svg/text/more_info_icon_close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="png_pages/berezdubrava_text_03" transform="translate(-1384.000000, -9854.000000)" fill="#0B1F16">
+            <g id="Всплывающее-с-текстом" transform="translate(423.000000, 9845.000000)">
+                <path d="M968,14 L974,14 L974,16 L968,16 L968,22 L966,22 L966,16 L960,16 L960,14 L966,14 L966,8 L968,8 L968,14 Z" id="svg/text/more_info_icon_close" transform="translate(967.000000, 15.000000) rotate(-315.000000) translate(-967.000000, -15.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

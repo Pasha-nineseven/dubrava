@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>svg/header_russia_flag</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="png_pages/berezdubrava_scroll_01" transform="translate(-1265.000000, -23.000000)">
+            <g id="меню" transform="translate(137.000000, 11.000000)">
+                <g id="Верхнее-меню" transform="translate(183.000000, 12.000000)">
+                    <g id="Выбор-языка" transform="translate(945.000000, 0.000000)">
+                        <g id="svg/header_russia_flag">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Oval" fill="#F0F0F0" fill-rule="nonzero" xlink:href="#path-1"></use>
+                            <path d="M23.2536094,17.3636255 C23.736,16.0045453 24,14.5345648 24,12.9999946 C24,11.4654243 23.736,9.99544381 23.2536094,8.63636364 L0.746390625,8.63636364 C0.264046875,9.99544381 0,11.4654243 0,12.9999946 C0,14.5345648 0.264046875,16.0045453 0.746390625,17.3636255 L12,18.4545455 L23.2536094,17.3636255 Z" id="Shape" fill="#0052B4" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                            <path d="M12,26 C18.418749,26 23.8907017,22.1163333 26,16.6666667 L-2,16.6666667 C0.109298267,22.1163333 5.58125102,26 12,26 Z" id="Shape" fill="#D80027" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

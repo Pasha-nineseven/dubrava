@@ -5,11 +5,33 @@ $(document).ready(function() {
 	// })
 
 
-	// $("header").bluroverlay({
-	//  	blur: 10,
-	//  	opacity: 0.4,
-	//  	background: "#fff",
-	// });
+	//MOBILE-MENU
+	$('body').on('click','.menu-btn', function(e){
+		e.preventDefault();
+		// $(this).addClass('active');
+		$('body').addClass('hidden');
+		
+		$('.menu-mobile').addClass('active');
+	});
+	$('body').on('click','.menu-mobile__close', function(e){
+		e.preventDefault();
+		$('body').removeClass('hidden');
+
+		$('.menu-mobile').removeClass('active');
+	});
+
+
+	//MOBILE MENU SECOND LEVEL
+	$('body').on('click','.menu-mobile-second__link--submenu', function(e){
+		e.preventDefault();
+		$('.menu-mobile-second__wrap').addClass('hidden');
+		$('.menu-mobile-third').addClass('active');
+	});
+	$('body').on('click','.menu-mobile-third__back', function(e){
+		e.preventDefault();
+		$('.menu-mobile-second__wrap').removeClass('hidden');
+		$('.menu-mobile-third').removeClass('active');
+	});
 
 
 
@@ -92,6 +114,26 @@ $(document).ready(function() {
 		//midClick: true,
 	});
 
+	//POPUP-GALLERY
+	$('.js-gallery').magnificPopup({
+	  	type: 'image',
+	  	gallery:{enabled:true},
+	  	closeOnContentClick: true,
+        closeBtnInside: false,
+        removalDelay: 300,
+        // fixedContentPos: false,
+        mainClass: 'mfp-with-fade',
+	  	callbacks: {
+			beforeOpen: function() {
+				this.st.mainClass = this.st.el.attr('data-effect');
+			},
+			imageLoadComplete: function() { 
+                var self = this;
+                setTimeout(function() { self.wrap.addClass('mfp-image-loaded'); }, 16);
+            }
+		},
+	})
+
 
 
 
@@ -111,7 +153,7 @@ $(document).ready(function() {
 			useTransform:true,
 			accessibility: false,
 			infinite: false,
-			slidesToShow: 4,
+			slidesToShow: 3,
   			slidesToScroll: 1,
   			responsive: [
 			    {
@@ -147,6 +189,20 @@ $(document).ready(function() {
 $(window).resize(function () {
 
 });
+
+
+
+
+// $(function() {
+// 	$(".submenu__item").mouseover(function(e) {
+// 		e.preventDefault();
+// 	    var menu = $(this).data('menu');
+//         $(".submenu-bg__item").removeClass('active');
+//         $("#image"+menu).addClass('active');
+// 	}), $(".submenu__item").mouseleave(function(e) {
+// 	    $(".submenu-bg__item").removeClass('active');
+// 	})
+// });
 
 
 //DATEPICKER
@@ -194,7 +250,11 @@ $('body').append(
 		#pages li { margin: 5px 0; } \
 	</style> \
 	<ol id="pages"> \
+		<li><a href="text.html">Text</a></li> \
 		<li><a href="about.html">About</a></li> \
+		<li><a href="usluga-page.html">Usluga-page</a></li> \
+		<li><a href="gallery.html">Gallery</a></li> \
+		<li><a href="list.html">List</a></li> \
 		<li><a href="index.html">Index</a></li> \
 	</ol> \
 </div>');

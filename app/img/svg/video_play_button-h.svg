@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="71px" viewBox="0 0 63 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>svg/text/video_play_button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="png_pages/berezdubrava_text_03" transform="translate(-854.000000, -5561.000000)" fill="#BBEE2A">
+            <g id="Видео-в-тексте" transform="translate(423.000000, 5342.000000)">
+                <g id="video_icon" transform="translate(378.000000, 180.000000)">
+                    <path fill="#6CC644" d="M41.351981,54.2888401 L94.9919121,40.4377747 C98.7351221,39.4711916 102.553164,41.7220925 103.519747,45.4653025 C103.816172,46.6132443 103.816172,47.8176675 103.519747,48.9656093 L89.6686813,102.60554 C88.7020983,106.34875 84.8840567,108.599651 81.1408467,107.633068 C79.9302015,107.320452 78.8253879,106.68927 77.9412526,105.805135 L38.1523869,66.0162689 C35.4187168,63.2825988 35.4187168,58.850444 38.1523869,56.1167739 C39.0365222,55.2326386 40.1413358,54.6014566 41.351981,54.2888401 Z" id="svg/text/video_play_button" transform="translate(69.554902, 74.554902) rotate(-315.000000) translate(-69.554902, -74.554902) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
