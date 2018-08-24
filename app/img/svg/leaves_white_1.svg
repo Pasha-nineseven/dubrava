@@ -4,6 +4,11 @@
     <title>svg/album_list/leaves_white</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
+    <style>
+        path{
+            fill:#F2F1EF;
+        }
+    </style>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.70238904">
         <g id="png_pages/berezdubrava_scroll_01" transform="translate(-137.000000, -633.000000)" fill="#FFFFFF">
             <g id="Альбом-Copy" transform="translate(97.000000, 566.000000)">
