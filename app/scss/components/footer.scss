@@ -17,6 +17,7 @@
 		position: relative;
 		margin-left: 2px;
 		margin-top: -7px;
+		transition:all 0.3s ease;
 		// &:before{
 		// 	content: "";
 		// 	display: inline-block;
@@ -28,6 +29,10 @@
 		// 	top: -5px;
 		// 	transform: skewX(-10deg);
 		// }
+		&:hover{
+			background: url(../img/svg/footer_logo_97-h.svg) no-repeat;
+			background-size: contain;
+		}
 	}
 }
 
@@ -108,18 +113,33 @@
 		background-size: contain;
 		width: 11px;
 		height: 20px;
+		transition:background 0.2s ease;
+		&:hover{
+			background: url(../img/svg/footer_cosial_facebook-logo-h.svg) no-repeat;
+			background-size: contain;
+		}
 	}
 	&.socials__item--inst{
 		background: url(../img/svg/footer_cosial_instagram.svg) no-repeat;
 		background-size: contain;
 		width: 20px;
 		height: 20px;
+		transition:background 0.2s ease;
+		&:hover{
+			background: url(../img/svg/footer_cosial_instagram-h.svg) no-repeat;
+			background-size: contain;
+		}
 	}
 	&.socials__item--vk{
 		background: url(../img/svg/footer_cosial_vk_logo.svg) no-repeat;
 		background-size: contain;
 		width: 23px;
 		height: 13px;
+		transition:background 0.2s ease;
+		&:hover{
+			background: url(../img/svg/footer_cosial_vk_logo-h.svg) no-repeat;
+			background-size: contain;
+		}
 	}
 }
 
@@ -129,11 +149,18 @@
     text-decoration: none!important;
     font-size: 18px;
     margin-top: -12px;
+    &:hover{
+    	color: #BBEE2A;
+    }
 }
 
 .page-footer-phone{
 	font-size: 22px;
 	font-family: 'lato-bold';
+	color: #fff;
+	&:hover{
+		color: #BBEE2A;
+	}
 	span{
 		display: inline-block;
 		position: relative;
@@ -146,7 +173,7 @@
 	font-family: 'lato-bold';
 	background: #6CC644;
 	border-radius: 19px;
-	    padding: 2px 19px;
+	    padding: 1px 19px 3px 19px;
 	margin-left: 25px;
 	color: #fff;
 	text-decoration: none!important;
@@ -158,6 +185,8 @@
 	&:active{
 		background: #BBEE2A;
 		border: 2px solid #BBEE2A;
+		color: #2C6D4D;
+		
 	}
 }
 

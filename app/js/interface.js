@@ -4,6 +4,8 @@ $(document).ready(function() {
 	// 	e.preventDefault();
 	// })
 
+
+
 	//HEADER FIX
 	var shrinkHeader = 80;
 	var scroll = getCurrentScroll();
@@ -36,14 +38,14 @@ $(document).ready(function() {
 	//MOBILE MENU SECOND LEVEL
 	$('body').on('click','.menu-mobile-second__link--submenu', function(e){
 		e.preventDefault();
-		$('.menu-mobile-second__wrap').addClass('hidden');
-		$('.menu-mobile-third').addClass('active');
+		$(this).toggleClass('active');
+		$('.menu-mobile-third').slideToggle(250);
 	});
-	$('body').on('click','.menu-mobile-third__back', function(e){
-		e.preventDefault();
-		$('.menu-mobile-second__wrap').removeClass('hidden');
-		$('.menu-mobile-third').removeClass('active');
-	});
+	// $('body').on('click','.menu-mobile-third__back', function(e){
+	// 	e.preventDefault();
+	// 	$('.menu-mobile-second__wrap').removeClass('hidden');
+	// 	$('.menu-mobile-third').removeClass('active');
+	// });
 
 
 
@@ -86,10 +88,10 @@ $(document).ready(function() {
                 this.st.mainClass = this.st.el.attr('data-effect');
             },
             open: function(){
-                $('body').addClass('noscroll');
+                $('body').addClass('hidden');
             },
             close: function() {
-                 $('body').removeClass('noscroll');
+                 $('body').removeClass('hidden');
             }
         },
 
@@ -129,17 +131,40 @@ $(document).ready(function() {
 	$('.js-popup-inline').magnificPopup({
 		type: 'inline',
 		removalDelay: 500,
-
+		fixedContentPos: false,
 		callbacks: {
 			beforeOpen: function() {
 				this.st.mainClass = this.st.el.attr('data-effect');
 			},
 			open: function(){
-		    }
+                $('body').addClass('hidden');
+            },
+            close: function() {
+                 $('body').removeClass('hidden');
+            }
 		},
 
 		//midClick: true,
 	});
+
+	 $('.js-popup-inline-feedback').magnificPopup({
+        type: 'inline',
+        removalDelay: 500,
+        fixedContentPos: false,
+        callbacks: {
+            beforeOpen: function() {
+                this.st.mainClass = this.st.el.attr('data-effect');
+            },
+            open: function(){
+                $('body').addClass('hidden');
+            },
+            close: function() {
+                 $('body').removeClass('hidden');
+            }
+        },
+
+        //midClick: true,
+    });
 
 	//POPUP-GALLERY
 	$('.js-gallery').magnificPopup({
@@ -208,8 +233,41 @@ $(document).ready(function() {
 			]
 	    });
 	};
+
+
+
+
+	//LANG SELECT
+	$("body").on("click", ".top-info-lang__view", function(e){
+		e.preventDefault();
+		$(".top-info-lang__list").slideToggle(250);
+	});
+
+	$("body").on("click", ".top-info-lang__item", function(e){
+		e.preventDefault();
+		var text = $(this).html();
+		$(".top-info-lang__view").html(text);
+	});
+
+	$(document).bind('click', function(e) {
+		var div = $(".top-info-lang");
+		if (!div.is(e.target)
+		    && div.has(e.target).length === 0) {
+			$(".top-info-lang__list").slideUp(250);
+		}
+	});
+
 });
 
+
+// $(function() {
+
+//     var t1Vibrancy = $('.target-1').vibrancy({
+//         panelClass: 'panel',
+//         backgroundSrc: $('.thumbs-1 img:first-child').attr('src')
+//     }).data('vibrancy');
+
+// });
 
 
 
@@ -259,15 +317,46 @@ $(function() {
     }
 
     $('.input-calendar').daterangepicker({
-        startDate: start,
-        endDate: end,
+        "locale": {
+	        "format": "MM/DD/YYYY",
+	        "separator": " - ",
+	        "applyLabel": "Применить",
+	        "cancelLabel": "Отмена",
+	        "fromLabel": "От",
+	        "toLabel": "До",
+	        "customRangeLabel": "Свой",
+	        "daysOfWeek": [
+	            "Вс",
+	            "Пн",
+	            "Вт",
+	            "Ср",
+	            "Чт",
+	            "Пт",
+	            "Сб"
+	        ],
+	        "monthNames": [
+	            "Январь",
+	            "Февраль",
+	            "Март",
+	            "Апрель",
+	            "Май",
+	            "Июнь",
+	            "Июль",
+	            "Август",
+	            "Сентябрь",
+	            "Октябрь",
+	            "Ноябрь",
+	            "Декабрь"
+	        ],
+	        "firstDay": 1
+	    },
         ranges: {
-           'Today': [moment(), moment()],
-           'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-           'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-           'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-           'This Month': [moment().startOf('month'), moment().endOf('month')],
-           'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+           'Сегодня': [moment(), moment()],
+           'Вчера': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+           'Прошлые 7 дней': [moment().subtract(6, 'days'), moment()],
+           'Прошлые 30 дней': [moment().subtract(29, 'days'), moment()],
+           'Этот месяц': [moment().startOf('month'), moment().endOf('month')],
+           'Прошлый месяц': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
         }
     }, cb);
 

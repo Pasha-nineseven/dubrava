@@ -287,7 +287,6 @@
     width: auto;
     height: auto;
     font-family: inherit;
-    font-size: 34px;
     top: auto;
     bottom: -17px;
     opacity: 1;
@@ -297,6 +296,7 @@
         line-height: 1;
     padding: 1px 12px;
     display: inline-block;
+    vertical-align: middle;
     transition: background 0.3s ease;
     &:after{
 		content: 'Закрыть';
@@ -309,9 +309,17 @@
     }
     &:hover{
     	background:  #BBEE2A;
+    	color: #0B1F16;
+    	&:after{
+			color: #0B1F16;
+    	}
     }
     &:active{
-    	background: #6CC644; 
+    	background: #6CC644;
+    	color: #2C6D4D;
+    	&:after{
+    		color: #2C6D4D;
+    	}
     }
 }
 
@@ -394,4 +402,10 @@
 
 .mfp-arrow:active {
     margin-top: -28px!important;
+}
+
+
+.mfp-container {
+    overflow-y: auto;
+    max-height: 100vh;
 }

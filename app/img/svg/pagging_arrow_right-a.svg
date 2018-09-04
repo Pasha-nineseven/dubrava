@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="22px" viewBox="0 0 13 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>svg/pagging_arrow_right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="png_pages/berezdubrava_scroll_01" transform="translate(-968.000000, -1873.000000)" fill="#000000">
+            <g id="Пагинация" transform="translate(459.000000, 1868.000000)">
+                <path fill="#2C6D4D" d="M524.159903,9.55330086 L525.659903,11.0533009 L515.053301,21.6599026 L504.446699,11.0533009 L505.946699,9.55330086 L515.053301,18.6599026 L524.159903,9.55330086 Z" id="svg/pagging_arrow_right" transform="translate(515.053301, 15.606602) scale(-1, -1) rotate(-270.000000) translate(-515.053301, -15.606602) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
