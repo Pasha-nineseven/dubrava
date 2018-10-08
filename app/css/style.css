@@ -836,7 +836,9 @@ a[href^="https://maps.google.com/maps"] {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  position: relative; }
+  position: relative;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out; }
   .page-top:before {
     content: "";
     display: block;
@@ -855,6 +857,9 @@ a[href^="https://maps.google.com/maps"] {
   .page-top__inner .container-fluid {
     border-bottom: 2px solid #BBEE2A;
     position: static; }
+
+.page-top-bg {
+  display: none; }
 
 .page-header {
   position: fixed;
@@ -1293,7 +1298,8 @@ a.breadcrumbs__item:hover:before {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1; }
+  z-index: -1;
+  pointer-events: none; }
   .submenu-bg__item.active {
     opacity: 1; }
   .submenu-bg__item:before {
@@ -4132,6 +4138,30 @@ a.gallery__item {
 .daterangepicker td.in-range.end-date {
   background-color: #6CC644; }
 
+.contacts-item {
+  margin-bottom: 30px; }
+
+.contacts-sqheme {
+  margin-bottom: 30px;
+  display: block; }
+
+.contacts-item__in {
+  margin-bottom: 10px; }
+
+.person {
+  padding: 8px 0;
+  border-top: 1px solid rgba(18, 130, 75, 0.3);
+  border-bottom: 1px solid rgba(18, 130, 75, 0.3); }
+
+.person__item {
+  border-right: 1px solid rgba(18, 130, 75, 0.3);
+  padding: 20px 15px;
+  margin-right: -1px; }
+  .person__item:last-child {
+    border-right: 0; }
+  .person__item .contacts-item__in {
+    font-size: 16px; }
+
 /* Accordion responsive breakpoint */
 @media only screen and (max-width: 768px) {
   .r-tabs .r-tabs-nav {
@@ -4797,7 +4827,13 @@ a.gallery__item {
   .complex__item {
     padding: 55px 30px; }
   .item-image-wrap {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .person__item {
+    margin-bottom: 20px; }
+    .person__item:last-child {
+      margin-bottom: 0; }
+    .person__item:nth-child(2n) {
+      border-right: 0; } }
 
 @media screen and (max-width: 900px) {
   .top-phone {

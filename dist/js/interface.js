@@ -1,10 +1,5 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
-	// $("body").on("click", ".test", function(e){
-	// 	e.preventDefault();
-	// })
-
-
 
 	//HEADER FIX
 	var shrinkHeader = 80;
@@ -34,20 +29,12 @@ $(document).ready(function() {
 		$('.menu-mobile').removeClass('active');
 	});
 
-
 	//MOBILE MENU SECOND LEVEL
 	$('body').on('click','.menu-mobile-second__link--submenu', function(e){
 		e.preventDefault();
-		$('.menu-mobile-second__wrap').addClass('hidden');
-		$('.menu-mobile-third').addClass('active');
+		$(this).toggleClass('active');
+		$('.menu-mobile-third').slideToggle(250);
 	});
-	$('body').on('click','.menu-mobile-third__back', function(e){
-		e.preventDefault();
-		$('.menu-mobile-second__wrap').removeClass('hidden');
-		$('.menu-mobile-third').removeClass('active');
-	});
-
-
 
 	//MORE
 	$('body').on('click','.js-more-btn', function(e){
@@ -76,7 +63,6 @@ $(document).ready(function() {
         $(this).parents('.accordeon__info').slideUp();
     })
 
-
     //POPUP-VIDEO
     $('.js-video').magnificPopup({
         type: 'iframe',
@@ -94,12 +80,7 @@ $(document).ready(function() {
                  $('body').removeClass('hidden');
             }
         },
-
-        //midClick: true,
     });
-
-
-
 
     //TABS
     if ($('.resp-tabs').length>0) {
@@ -107,7 +88,6 @@ $(document).ready(function() {
 		    startCollapsed: 'accordion'
 		});
 	}
-
 
 	//HINT
 	$("body").on("click", ".js-hint__link", function(e){
@@ -119,13 +99,10 @@ $(document).ready(function() {
         $(this).parents('.hint__info').fadeOut(100);
     });
 
-
-
     //FS
     if ($('.fs').length>0) {
     	$('.fs').styler();
     }
-
 
     //POPUP-INLINE
 	$('.js-popup-inline').magnificPopup({
@@ -143,9 +120,25 @@ $(document).ready(function() {
                  $('body').removeClass('hidden');
             }
 		},
-
-		//midClick: true,
 	});
+
+	 $('.js-popup-inline-feedback').magnificPopup({
+        type: 'inline',
+        removalDelay: 500,
+        fixedContentPos: false,
+        callbacks: {
+            beforeOpen: function() {
+                this.st.mainClass = this.st.el.attr('data-effect');
+            },
+            open: function(){
+                $('body').addClass('hidden');
+            },
+            close: function() {
+                 $('body').removeClass('hidden');
+            }
+        },
+
+    });
 
 	//POPUP-GALLERY
 	$('.js-gallery').magnificPopup({
@@ -166,9 +159,6 @@ $(document).ready(function() {
             }
 		},
 	})
-
-
-
 
 	//SERVICE slider
 	if ($('.services-slider').length>0) {
@@ -214,6 +204,38 @@ $(document).ready(function() {
 			]
 	    });
 	};
+
+	//LANG SELECT
+	$("body").on("click", ".top-info-lang__view", function(e){
+		e.preventDefault();
+		$(".top-info-lang__list").slideToggle(250);
+	});
+
+	$("body").on("click", ".top-info-lang__item", function(e){
+		e.preventDefault();
+		var text = $(this).html();
+		$(".top-info-lang__view").html(text);
+	});
+
+	$(document).bind('click', function(e) {
+		var div = $(".top-info-lang");
+		if (!div.is(e.target)
+		    && div.has(e.target).length === 0) {
+			$(".top-info-lang__list").slideUp(250);
+		}
+	});
+
+
+
+	//TOP BG CHANGE
+	if ($(".js-page-top-list__bg").length>0) {
+		$(".js-page-top-list__bg").mouseover(function(e){
+			e.preventDefault();
+	        var bg = $(this).data('bg');
+	        $(".page-top").css('background-image', 'url(' + bg + ')');
+
+	    });
+    }
 });
 
 
@@ -274,15 +296,46 @@ $(function() {
     }
 
     $('.input-calendar').daterangepicker({
-        startDate: start,
-        endDate: end,
+        "locale": {
+	        "format": "MM/DD/YYYY",
+	        "separator": " - ",
+	        "applyLabel": "Применить",
+	        "cancelLabel": "Отмена",
+	        "fromLabel": "От",
+	        "toLabel": "До",
+	        "customRangeLabel": "Свой",
+	        "daysOfWeek": [
+	            "Вс",
+	            "Пн",
+	            "Вт",
+	            "Ср",
+	            "Чт",
+	            "Пт",
+	            "Сб"
+	        ],
+	        "monthNames": [
+	            "Январь",
+	            "Февраль",
+	            "Март",
+	            "Апрель",
+	            "Май",
+	            "Июнь",
+	            "Июль",
+	            "Август",
+	            "Сентябрь",
+	            "Октябрь",
+	            "Ноябрь",
+	            "Декабрь"
+	        ],
+	        "firstDay": 1
+	    },
         ranges: {
-           'Today': [moment(), moment()],
-           'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-           'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-           'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-           'This Month': [moment().startOf('month'), moment().endOf('month')],
-           'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+           'Сегодня': [moment(), moment()],
+           'Вчера': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+           'Прошлые 7 дней': [moment().subtract(6, 'days'), moment()],
+           'Прошлые 30 дней': [moment().subtract(29, 'days'), moment()],
+           'Этот месяц': [moment().startOf('month'), moment().endOf('month')],
+           'Прошлый месяц': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
         }
     }, cb);
 
@@ -313,6 +366,7 @@ $('body').append(
 		<li><a href="usluga-page.html">Usluga-page</a></li> \
 		<li><a href="gallery.html">Gallery</a></li> \
 		<li><a href="list.html">List</a></li> \
+		<li><a href="contact.html">Contact</a></li> \
 		<li><a href="index.html">Index</a></li> \
 	</ol> \
 </div>');

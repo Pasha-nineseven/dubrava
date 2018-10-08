@@ -2983,6 +2983,38 @@ a.gallery__item{
 	background-color: #6CC644;
 }
 
+.contacts-item{
+	margin-bottom: 30px;
+}
+
+.contacts-sqheme{
+	margin-bottom: 30px;
+	display: block;
+}
+
+.contacts-item__in{
+	margin-bottom: 10px;
+}
+
+.person{
+	padding: 8px 0;
+	border-top: 1px solid rgba(18, 130, 75, 0.3);
+	border-bottom: 1px solid rgba(18, 130, 75, 0.3);
+}
+
+.person__item{
+	border-right: 1px solid rgba(18, 130, 75, 0.3);
+	padding: 20px 15px;
+	margin-right: -1px;
+	&:last-child{
+		border-right: 0;
+	}
+	.contacts-item__in{
+		font-size: 16px;
+	}
+}
+
+
 /* Accordion responsive breakpoint */
 @media only screen and (max-width: 768px) {
     .r-tabs .r-tabs-nav {

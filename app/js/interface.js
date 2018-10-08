@@ -1,10 +1,5 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
-	// $("body").on("click", ".test", function(e){
-	// 	e.preventDefault();
-	// })
-
-
 
 	//HEADER FIX
 	var shrinkHeader = 80;
@@ -34,20 +29,12 @@ $(document).ready(function() {
 		$('.menu-mobile').removeClass('active');
 	});
 
-
 	//MOBILE MENU SECOND LEVEL
 	$('body').on('click','.menu-mobile-second__link--submenu', function(e){
 		e.preventDefault();
 		$(this).toggleClass('active');
 		$('.menu-mobile-third').slideToggle(250);
 	});
-	// $('body').on('click','.menu-mobile-third__back', function(e){
-	// 	e.preventDefault();
-	// 	$('.menu-mobile-second__wrap').removeClass('hidden');
-	// 	$('.menu-mobile-third').removeClass('active');
-	// });
-
-
 
 	//MORE
 	$('body').on('click','.js-more-btn', function(e){
@@ -76,7 +63,6 @@ $(document).ready(function() {
         $(this).parents('.accordeon__info').slideUp();
     })
 
-
     //POPUP-VIDEO
     $('.js-video').magnificPopup({
         type: 'iframe',
@@ -94,12 +80,7 @@ $(document).ready(function() {
                  $('body').removeClass('hidden');
             }
         },
-
-        //midClick: true,
     });
-
-
-
 
     //TABS
     if ($('.resp-tabs').length>0) {
@@ -107,7 +88,6 @@ $(document).ready(function() {
 		    startCollapsed: 'accordion'
 		});
 	}
-
 
 	//HINT
 	$("body").on("click", ".js-hint__link", function(e){
@@ -119,13 +99,10 @@ $(document).ready(function() {
         $(this).parents('.hint__info').fadeOut(100);
     });
 
-
-
     //FS
     if ($('.fs').length>0) {
     	$('.fs').styler();
     }
-
 
     //POPUP-INLINE
 	$('.js-popup-inline').magnificPopup({
@@ -143,8 +120,6 @@ $(document).ready(function() {
                  $('body').removeClass('hidden');
             }
 		},
-
-		//midClick: true,
 	});
 
 	 $('.js-popup-inline-feedback').magnificPopup({
@@ -163,7 +138,6 @@ $(document).ready(function() {
             }
         },
 
-        //midClick: true,
     });
 
 	//POPUP-GALLERY
@@ -185,9 +159,6 @@ $(document).ready(function() {
             }
 		},
 	})
-
-
-
 
 	//SERVICE slider
 	if ($('.services-slider').length>0) {
@@ -234,9 +205,6 @@ $(document).ready(function() {
 	    });
 	};
 
-
-
-
 	//LANG SELECT
 	$("body").on("click", ".top-info-lang__view", function(e){
 		e.preventDefault();
@@ -257,6 +225,17 @@ $(document).ready(function() {
 		}
 	});
 
+
+
+	//TOP BG CHANGE
+	if ($(".js-page-top-list__bg").length>0) {
+		$(".js-page-top-list__bg").mouseover(function(e){
+			e.preventDefault();
+	        var bg = $(this).data('bg');
+	        $(".page-top").css('background-image', 'url(' + bg + ')');
+
+	    });
+    }
 });
 
 
@@ -387,6 +366,7 @@ $('body').append(
 		<li><a href="usluga-page.html">Usluga-page</a></li> \
 		<li><a href="gallery.html">Gallery</a></li> \
 		<li><a href="list.html">List</a></li> \
+		<li><a href="contact.html">Contact</a></li> \
 		<li><a href="index.html">Index</a></li> \
 	</ol> \
 </div>');
