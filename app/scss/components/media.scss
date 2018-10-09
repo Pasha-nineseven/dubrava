@@ -513,6 +513,15 @@
 			}
 		}
 	}
+	.gallery__img--blured {
+	    display: none;
+	}
+	.gallery__img {
+	    height: 440px;
+	}
+	.gallery-view__count {
+	    font-size: 18px;
+	}
 }
 
 @media screen and (max-width: 650px){
@@ -577,13 +586,13 @@
 	    padding: 85px 15px 50px;
 	}
 	.map-info {
-	    margin-bottom: 20px;
+	    margin-bottom: 15px;
 	    font-size: 16px;
 	}
 	.map-coords,
 	.map-phone{
 	    font-size: 18px;
-	    margin-bottom: 20px;
+	    margin-bottom: 15px;
 	}
 	.si-float-wrapper{
 		.btn-submit{
@@ -623,6 +632,26 @@
 
 	.lamp-inner {
 	    height: 260px;
+	}
+	.ymaps-2-1-69-balloon__content {
+	    padding: 30px 15px 30px !important;
+	}
+	.ymaps-2-1-69-balloon__content:before{
+		display: none;
+	}
+	.map-info,
+	.map-coords,
+	.map-phone{
+		max-width: 280px;
+	}
+	.map-phone + .btn-submit{
+		font-size: 20px;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.ymaps-2-1-69-balloon{
+		//left: 57px!important;
+		transform:none;
 	}
 }
 

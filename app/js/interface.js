@@ -236,6 +236,20 @@ $(document).ready(function() {
 
 	    });
     }
+
+
+
+    //SHOW SUBMENU BG
+	$('body').on('mouseenter','.submenu__item', function(e){
+		e.preventDefault();
+		$('.submenu-bg__item').css('opacity','0');
+		$(this).find('.submenu-bg__item').css('opacity','1');
+	});
+	$('body').on('mouseleave','.submenu__item', function(e){
+		e.preventDefault();
+		$('.submenu-bg__item').css('opacity','0');
+		$('.submenu__item.active').find('.submenu-bg__item').css('opacity','1');
+	});
 });
 
 

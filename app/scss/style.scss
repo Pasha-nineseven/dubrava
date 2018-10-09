@@ -1603,17 +1603,24 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 
 
 .map-info{
-	font-weight: 100;
-	margin-bottom: 30px;
+	font-family: 'lato-light';
+	margin-bottom: 20px;
+	max-width: 360px;
 }
 .map-coords{
 	font-size: 24px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	max-width: 360px;
 }
 
 .map-phone{
 	font-size: 24px;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
+	max-width: 360px;
+}
+.map-phone+.btn-submit{
+	margin-bottom: 10px;
+	display: inline-block;
 }
 
 .si-float-wrapper {
@@ -3014,6 +3021,64 @@ a.gallery__item{
 	}
 }
 
+
+.ymaps-2-1-69-balloon__content{
+	border: 6px solid #E7E5E3;
+    text-align: center;
+    padding: 160px 30px 20px !important;
+    background: url(../img/svg/leaves_white_1.svg) left top repeat!important;
+    			
+    font:inherit!important;
+}
+
+.ymaps-2-1-69-balloon__content:before{
+	content: "";
+	width: 146px;
+	height: 151px;
+	background: url(../img/svg/info-label.svg) no-repeat;
+	position: absolute;
+	left: 50%;
+	margin-left: -73px;
+	top: -15px;
+}
+
+.ymaps-2-1-69-balloon__layout{
+	overflow: visible!important;
+}
+
+.ymaps-2-1-69-balloon__close+.ymaps-2-1-69-balloon__content{
+	margin-right: 0!important;
+	
+}
+
+.ymaps-2-1-69-balloon__tail{
+	margin-left: -12px;
+}
+
+
+.ymaps-2-1-69-balloon__close {
+    margin-right: 6px;
+}
+
+
+.ymaps-2-1-69-balloon__tail:after {
+	content: '';
+    position: absolute;
+    width: 20px!important;
+    height: 20px!important;
+    background-color: #fff!important;
+    bottom: -5px!important;
+    left: -4px!important;
+    border: 7px solid transparent;
+    border-bottom-color: #E7E5E3;
+    border-left-color: #E7E5E3;
+}
+
+.ymaps-2-1-69-balloon__tail{
+	background: #fff!important;
+	z-index: 2;
+	left: 215px!important;
+}
 
 /* Accordion responsive breakpoint */
 @media only screen and (max-width: 768px) {

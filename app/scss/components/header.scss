@@ -116,8 +116,10 @@
 }
 
 
+
 span.breadcrumbs__item{
 	position: relative;
+	margin-right: 0;
 	&:before{
 		content: "";
 	    position: absolute;
@@ -128,6 +130,9 @@ span.breadcrumbs__item{
 	    background-color: #BBEE2A;
 	    transform: scaleX(1);
 			visibility: visible;
+	}
+	&:after{
+		display: none;
 	}
 }
 
@@ -466,7 +471,6 @@ a.breadcrumbs__item{
 		}
 		
     }
-    &:hover,
     &.active{
 		span{
 			&:before{
@@ -480,6 +484,17 @@ a.breadcrumbs__item{
 	}
     &:last-child{
     	margin-bottom: 0;
+    }
+    &:hover{
+    	span{
+			&:before{
+				transform: scaleX(1);
+				visibility: visible;
+			}
+		}
+		// >.submenu-bg__item{
+		// 	opacity: 1!important;
+		// }
     }
 }
 
